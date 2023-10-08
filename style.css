@@ -1,0 +1,38 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    color:blue;           
+}
+h1{
+    color:rgb(165, 34, 177);
+    border: 2px solid slateblue
+}
+h2
+    {color:darkblue;
+        border: 2px solid slateblue}
+p
+    {border: 2px solid slateblue; color:rgb(190, 154, 64)
+} 
+a {border: 2px dashed rgb(26, 223, 19)}
+.pumpkin {color:rgb(247, 167, 7)}
+div {
+    border: 4px dotted; color:rgb(190, 154, 64); 
+    padding-top: 40px;
+    display: flex;}
+h1 {
+    flex:1;
+}
+h2 {flex:1;
+}
+h3{
+    color:deeppink;
+    flex: 100px;
+    border: 2p solid; color:aquamarinel;
+    margin-top: 40px
+    margin-left: 40px
+}
+.hero {
+    background-image: url('ganapathy-kumar-L75D18aVal8-unsplash\ \(1\).jpg'); 
+    background-position: center center;
+    background-size:cover;
+    height: 100vh;
+}
