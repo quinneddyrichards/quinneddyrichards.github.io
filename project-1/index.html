@@ -7,34 +7,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="landing-page">
+    <header class="landing-page">
         <div class="landing-ticket">
             <h2>The 4 <br> Main Types of</h2>
             <h1>Clowns</h1>
+            </div>
             <article class='navigation'>
                 <div>
+                    <a href="#whiteface">
                     <img src="images/whiteface-button-default.png">
-                    <img src="images/whiteface-button-hover.png">
+                    <img class="ticket-hover" src="images/whiteface-button-hover.png">
+                    </a>
                 </div>
                 <div>
+                    <a href="#auguste">
                     <img src="images/auguste-button-default.png">
-                    <img src="images/auguste-button-hover.png">
+                    <img class="ticket-hover" src="images/auguste-button-hover.png"> </a>
                 </div>
                 <div>
+                    <a href="#character">
                     <img src="images/character-button-default.png">
-                    <img src="images/character-button-hover.png">
+                    <img class="ticket-hover" src="images/character-button-hover.png"> </a>
                 </div>
                 <div>
+                    <a href="#mime">
                     <img src="images/mime-button-default.png">
-                    <img src="images/mime-button-hover.png">
+                    <img class="ticket-hover" src="images/mime-button-hover.png"> </a>
                 </div>
-            </nav>
-        </div>
-        </article>
+                </article>
+                </header>
 
     </section>
    
-    <section class="one">
+    <section class="one" id="whiteface">
         <article class="left-content">
           <img src="images/whiteface-left.png">
         </article>
@@ -55,7 +60,7 @@
         </article>
       </section>
 
-  <section class="two">
+  <section class="two" id="auguste">
     <article class="left-content">
       <div class="ticket">
         <div class="content">
@@ -76,7 +81,7 @@
     </article>
   </section>
 
-  <section class="three">
+  <section class="three" id="character">
     <article class="left-content">
       <img src="images/character-left.png">
     </article>
@@ -97,7 +102,7 @@
     </article>
   </section>
 
-<section class="four">
+<section class="four" id="mime">
 <article class="left-content">
   <div class="ticket">
     <div class="content">
@@ -117,6 +122,13 @@
   <img src="images/mime-right.png">
 </article>
 </section>
- 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $('.navigation div').hover(
+        function(){
+            $(this).find ('img').toggleClass('ticket-hover');
+        }
+    )
+</script>
 </body>
 </html>

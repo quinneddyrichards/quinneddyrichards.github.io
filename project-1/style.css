@@ -14,7 +14,7 @@
     font-family: "zebrawood-std", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 270px; 
+    font-size: 240px; 
     color: #35302D; 
     text-align: center;
     margin:0;
@@ -22,7 +22,7 @@
  
 h2{
     font-family: 'Rye', serif;
-    font-size: 110px; 
+    font-size: 80px; 
     font-weight:400; 
     color: #35302D; 
     font-style: regular; 
@@ -58,15 +58,23 @@ h3{
   }
   .one {
     background-color: #DC4F36;
+    position: relative;
   }
   .two {
     background-color: #DC4F36;
+    position: relative;
   }
   .three {
     background-color: #DAA944;
+    position: relative;
   }
   .four {
     background-color: #99BB72;
+    position: relative;
+  }
+
+  .ticket-hover {
+    display: none;
   }
 
    /* Second setion */
@@ -81,9 +89,9 @@ h3{
     bottom: -100px;
   }
   .one .right-overlay {
-    bottom:-500px;
-    left: -670px;
-    position:relative;
+    bottom: 0;
+    right: 0;
+    position:absolute;
   }
 
   .two .left-content {
@@ -172,12 +180,11 @@ padding:20px;
 .landing-page{
     background-image: url(images/swirl-wavy-background.png);
     background-size:cover;
-    height:180vh;
+    background-repeat: no-repeat;
+    height:100vh;
     width:100vw;
 }
 .landing-ticket{
-    width: 100%;
-    height: 50%;
     margin:auto;
     background-image: url(images/landing-ticket.png);
     background-size:cover;
@@ -192,6 +199,7 @@ padding:20px;
     background-size: cover;
     height:140vh;
     width:100vw;
+    margin-top: -50px;
 }
 
 .three{
@@ -210,6 +218,7 @@ padding:20px;
 .navigation {
     display: flex;
 }
-.navigation {
-    flex: 1;
+.navigation div {
+    flex: 1; 
+    text-align: center;
 }
