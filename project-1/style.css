@@ -53,18 +53,20 @@ h3{
   section > article {
     flex:1;
   }
-  
+  .landing-page{
+    background-color: #DC4F36;
+  }
   .one {
     background-color: #DC4F36;
   }
   .two {
-    background-color: #DAA944;
+    background-color: #DC4F36;
   }
   .three {
-    background-color: #99BB72;
+    background-color: #DAA944;
   }
   .four {
-    background-color: #4E9CB1;
+    background-color: #99BB72;
   }
 
    /* Second setion */
@@ -161,15 +163,45 @@ padding:20px;
 
 
 .landing-page{
-    background-image: url(images/swirl.png);
+    background-image: url(images/swirl-wavy-background.png);
     background-size:cover;
-    height:100vh;
+    height:160vh;
     width:100vw;
 }
 .landing-ticket{
-    width:92%;
+    width: 100%;
     margin:auto;
     background-image: url(images/landing-ticket.png);
     background-size:cover;
 
+}
+
+.one {
+    height: 110vh;
+}
+.two {
+    background-image: url(images/yellow-wavy-background.png);
+    background-size: cover;
+    height:110vh;
+    width:100vw;
+}
+
+.three{
+    background-image: url(images/green-wavy-background.png);
+    background-size: cover;
+    height: 110vh;
+    width: 100vw;
+}
+
+.four{
+    background-image: url(images/blue-wavy-background.png);
+    background-size: cover;
+    height: 110vh;
+    width: 100vw;
+}
+.flex-me {
+    display: flex;
+}
+.flex-me div {
+    flex: 1;
 }
