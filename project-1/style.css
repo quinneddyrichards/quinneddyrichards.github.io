@@ -73,63 +73,70 @@ h3{
 
   .one .right-content {
     display:flex;
-    align-items:end;
+    align-items:top;
     justify-content:flex-end;
   }
   .one .left-content {
     position:relative;
+    bottom: -100px;
   }
-  .one .left-overlay {
-    bottom:0;
-    left:0;
-    position:absolute;
+  .one .right-overlay {
+    bottom:-500px;
+    left: -670px;
+    position:relative;
   }
 
   .two .left-content {
     display:flex;
-    align-items:end;
+    align-items:top;
     justify-content:flex-start;
   }
   .two .right-content {
     position:relative;
+    right: 500px;
+    bottom: -8px;
   }
-  .two .right-overlay {
-    bottom:0;
-    right:0;
-    position:absolute;
+  .two .left-overlay {
+    bottom: -480px;
+    right: 520px;
+    position:relative;
   }
 
   .three .right-content {
     display:flex;
-    align-items:end;
+    align-items:top;
     justify-content:flex-end;
   }
   .three .left-content {
     position:relative;
-  }
-  .three .left-overlay {
     bottom:0;
-    left:0;
-    position:absolute;
+    right: 10px;
+  }
+  .three .right-overlay {
+    bottom:-500px;
+    left:-570px;
+    position:relative;
   }
   
   .four .left-content {
     display:flex;
-    align-items:end;
+    align-items:top;
     justify-content:flex-start;
   }
   .four .right-content {
     position:relative;
+    right: 350px;
+    bottom:-100px;
   }
-  .four .right-overlay {
-    bottom:0;
-    right:0;
-    position:absolute;
+  .four .left-overlay {
+    bottom:-500px;
+    right:450px;
+    position:relative;
   }
 
 
   .ticket {
-  margin: 40px;
+  margin: 50px;
     min-height:400px;
   background-color: #F0E9D7;
   position: relative;
@@ -177,26 +184,26 @@ padding:20px;
 }
 
 .one {
-    height: 110vh;
+    height: 140vh;
 }
 .two {
     background-image: url(images/yellow-wavy-background.png);
     background-size: cover;
-    height:110vh;
+    height:140vh;
     width:100vw;
 }
 
 .three{
     background-image: url(images/green-wavy-background.png);
     background-size: cover;
-    height: 110vh;
+    height: 140vh;
     width: 100vw;
 }
 
 .four{
     background-image: url(images/blue-wavy-background.png);
     background-size: cover;
-    height: 110vh;
+    height: 140vh;
     width: 100vw;
 }
 .flex-me {
