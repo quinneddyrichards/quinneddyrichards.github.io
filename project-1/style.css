@@ -88,11 +88,16 @@ h3{
   .one .left-content {
     position:relative;
     bottom: -100px;
+    left: 0;
   }
   .one .right-overlay {
     bottom: 0;
     right: 0;
     position:absolute;
+  }
+
+  .one .left-content img{
+    width: 100%;
   }
 
   .two .left-content {
@@ -101,30 +106,32 @@ h3{
     justify-content:flex-start;
   }
   .two .right-content {
-    position:relative;
-    right: 500px;
+    position:absolute;
+    right: -50px;
     bottom: -8px;
   }
   .two .left-overlay {
-    bottom: -480px;
-    right: 520px;
-    position:relative;
+    bottom: -90px;
+    left: 0;
+    position:absolute;
   }
 
   .three .right-content {
-    display:flex;
     align-items:top;
-    justify-content:flex-end;
+    justify-content:flex-start;
+
   }
   .three .left-content {
-    position:relative;
-    bottom:0;
-    right: 10px;
+ flex:1;
   }
+
+.three .left-content img {
+  width: 100%;
+}
   .three .right-overlay {
-    bottom:-500px;
-    left:-570px;
-    position:relative;
+    bottom: -390px;
+    right: 0;
+    position:absolute;
   }
   
   .four .left-content {
@@ -132,10 +139,10 @@ h3{
     align-items:top;
     justify-content:flex-start;
   }
-  .four .right-overlay {
+  .four .right-content {
     position:absolute;
-    right: 0;
-    bottom:-100px;
+    right: -20px;
+    bottom:-5px;
   }
   .four .left-overlay {
     bottom:-5px;
@@ -206,32 +213,38 @@ padding:20px;
   left:0;
   right:0;
 }
+.wave2 {
+  width: 100vw;
+  position: absolute;
+  bottom:-170px;
+  left:0;
+  right:0;
+}
 .one {
     height: 140vh;
+    background-color: #DC4F36;
 }
 .two {
     background-color: #daa943;
-    height:140vh;
+    height:145vh;
     width:100vw;
 
 }
 
 .three{
-    background-image: url(images/green-wavy-background.png);
-    background-size: cover;
+    background-color: #99BB72;
     height: 140vh;
-    width: 100vw;
 }
 
 .four{
-    background-image: url(images/blue-wavy-background.png);
-    background-size: cover;
-    height: 140vh;
+  background-color: #4E9CB1;
+    height: 135vh;
     width: 100vw;
 }
 .navigation {
     display: flex;
     padding-bottom:80px;
+    padding-top: 50px;
 }
 .navigation div {
     flex: 1; 
