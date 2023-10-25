@@ -108,7 +108,7 @@ h3{
   .two .right-content {
     position:absolute;
     right: -50px;
-    bottom: -8px;
+    bottom: 30px;
   }
   .two .left-overlay {
     bottom: -90px;
@@ -134,6 +134,9 @@ h3{
     position:absolute;
   }
   
+  .three .ticket {
+    height: 800px;
+  }
   .four .left-content {
     display:flex;
     align-items:top;
