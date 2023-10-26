@@ -1,0 +1,126 @@
+
+@import url('https://use.typekit.net/jmq6oxv.css');
+
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Space Mono', monospace;
+ */
+
+ /* COLORS
+--sinopia: #C0441Dff;
+--licorice: #130906ff;
+--pale-dogwood: #EEC0B2ff;
+--cinnabar: #DE5D3Dff;
+--black: #090706ff;
+
+sinopia: rgba(192, 68, 29, 1);
+licorice: rgba(19, 9, 6, 1);
+pale-dogwood: rgba(238, 192, 178, 1);
+cinnabar: rgba(222, 93, 61, 1);
+black: rgba(9, 7, 6, 1); 
+*/
+
+* {
+  box-sizing:border-box;
+}
+img {
+  width:100%;
+  
+}
+body {
+  margin:0;
+  background-image: url('images/pinball.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+    font-family: vista-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #0A3665;}
+
+.content {
+  padding:40px;
+  width:80%;
+  min-height:80vh;
+  margin: 80px auto;
+  background-color: #9ac2cc;
+  border-radius: 20px;
+}
+a {
+  color: #C490D1;
+}
+a:hover {
+  color: rgb(135, 31, 191);
+}
+    /* Photo by cottonbro studio: https://www.pexels.com/photo/red-and-black-vinyl-record-4836517/ */
+
+h1 {
+  color:#6C4576;
+  font-size: 80px;
+  margin:20px;
+}
+
+h1, h2, h3 {
+    font-family: vista-slab, serif;
+    font-weight: 700;
+    font-style: normal;}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #C490D1;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.cards {
+  display:flex;
+}
+.card {
+  flex:33.3%;
+  background-color:white;
+  font-family: 'vista-sans', sans-serif;
+  margin-right:20px;
+  padding:16px;
+  border-radius: 20px;
+}
+.card:last-child {
+  margin-right:0;
+}
+
+.card img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #C490D1;
+  color: white;
+  text-decoration:none;
+  padding: 8px 12px;
+}
+.button:hover {
+  background-color: #456990;
+  color: white;
+}
+.resources {
+  margin-top:80px;
+  display:flex;
+}
+.resources div {
+  flex:1;
+  background-color:white;
+  border-radius:20px;
+  padding:20px;
+  margin-right:20px;
+}
+.resources div:last-child {
+  margin-right:0;
+}
+
