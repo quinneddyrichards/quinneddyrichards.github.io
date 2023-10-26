@@ -1,26 +1,6 @@
 
 @import url('https://use.typekit.net/jmq6oxv.css');
 
-/* 
-font-family: 'Inconsolata', monospace;
-font-family: 'Pixelify Sans', sans-serif;
-font-family: 'Space Mono', monospace;
- */
-
- /* COLORS
---sinopia: #C0441Dff;
---licorice: #130906ff;
---pale-dogwood: #EEC0B2ff;
---cinnabar: #DE5D3Dff;
---black: #090706ff;
-
-sinopia: rgba(192, 68, 29, 1);
-licorice: rgba(19, 9, 6, 1);
-pale-dogwood: rgba(238, 192, 178, 1);
-cinnabar: rgba(222, 93, 61, 1);
-black: rgba(9, 7, 6, 1); 
-*/
-
 * {
   box-sizing:border-box;
 }
@@ -40,7 +20,7 @@ body {
 
 .content {
   padding:40px;
-  width:80%;
+  width:85%;
   min-height:80vh;
   margin: 80px auto;
   background-color: #9ac2cc;
@@ -123,4 +103,3 @@ ul li::before {
 .resources div:last-child {
   margin-right:0;
 }
-
