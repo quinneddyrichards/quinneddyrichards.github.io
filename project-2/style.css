@@ -68,15 +68,12 @@ body{
   }
   .logo img {
     width: 168px;
-    margin-bottom:-10px;
+    margin-bottom: 20px;
     margin-top:20px;
   }
 
 header {
     background-color: #A6B7A2;
-}
-.desktop {
-    height:210px;
 }
 
 * {
@@ -234,6 +231,13 @@ footer {
     text-align:center;
     background: #527A56;
     color: #F6F1EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div, footer article{
+    flex: 1;
 }
 footer h2 {
     margin:0;
@@ -241,6 +245,7 @@ footer h2 {
 }
 footer a {
     color: #F6F1EC;
+    padding: 0 16px;
 }
 .footer-nav{
     justify-content: space-evenly;
@@ -251,6 +256,10 @@ footer a {
 
 .social-icons{
     flex-direction: row;
+}
+
+.social-icons img{
+    width: 37px;
 }
 
 .copyright{
@@ -264,8 +273,7 @@ footer a {
     .menu-desktop {
         width: 100%;
         display: flex;
-        align-items: baseline;
-        padding-bottom: 30px;
+        align-items: center;
         line-height: 10px;
         justify-content: space-evenly;
         flex-direction: row;
