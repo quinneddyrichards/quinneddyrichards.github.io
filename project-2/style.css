@@ -275,6 +275,9 @@ footer a {
         color: #fff;
         border-bottom:2px solid white;
     }
+    .logo a:hover {
+        border:none;
+    }
 
     .desktop {
         display: flex;
