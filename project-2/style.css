@@ -22,7 +22,9 @@ h3{
     font-style: normal;
     font-size: 34px;
 }
-
+a {
+    text-decoration: none;
+}
 body{
     font-family: 'Spectral', serif;
     font-weight: 400;
@@ -35,6 +37,7 @@ body{
     font-weight: 500;
     font-style: normal;
     font-size: 24px;
+    margin-top:0;
 }
 
 .button{
@@ -43,19 +46,25 @@ body{
     font-style: normal;
     font-size: 40px;
 }
-
+.centered {
+    text-align:center;
+}
 .branding {
     display: flex;
     align-items: baseline;
   }
   .logo img {
-    border-radius: 50%;
-    margin: 20px;
-    margin-bottom: -20px;
-    flex: 25%;
+    width: 168px;
+    margin-bottom:-10px;
+    margin-top:20px;
   }
 
-
+header {
+    background-color: #A6B7A2;
+}
+.desktop {
+    height:210px;
+}
 
 * {
     box-sizing: border-box;
@@ -206,15 +215,32 @@ main {
     padding-right:60px;
 }
 
+footer {
+    text-align:center;
+    background: #527A56;
+    color: white;
+}
+footer h2 {
+    margin:0;
+    padding-top:30px;
+}
+footer a {
+    color: white;
+}
+.footer-nav{
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /* START of desktop menu for 768 media query */
     .menu-desktop {
-        background-color: #A6B7A2;
         width: 100%;
-        display: block;
+        display: flex;
+        align-items: baseline;
         padding: 0;
         line-height: 50px;
         justify-content: space-evenly;
@@ -229,14 +255,14 @@ main {
     .menu-desktop a {
         display: inline-flex;
         margin-right: 30px;
-        height: 0;
         line-height: 50px;
         text-decoration: none;
         color: #241E1E;
         justify-content: space-evenly;
     }
     .menu-desktop a:hover {
-        color: #527A56;
+        color: #fff;
+        border-bottom:2px solid white;
     }
 
     .desktop {
@@ -253,12 +279,6 @@ main {
     /* END of desktop menu for 768 media query */
 }
 
-.footer-nav{
-    justify-content: space-evenly;
-    flex-direction: row;
-    height: 0;
-    text-align: center;
-}
 
 
 /* If the screen is smaller than 768 */
