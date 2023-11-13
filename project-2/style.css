@@ -19,7 +19,7 @@ h2{
 
 h3{
     font-family: "metallophile-sp8", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     font-size: 34px;
 }
@@ -42,7 +42,7 @@ body{
     background-repeat: no-repeat;
 }
 .hero h1 {
-    color: white;
+    color: #F6F1EC;
     margin:0;
 }
 .bold{
@@ -96,6 +96,8 @@ img {
     text-decoration:none;
     padding: 8px 16px;
     border-radius: 40px;
+    border:2px solid #906D59;
+
 }
 .button:hover {
     background-color: #F6F1EC;
@@ -176,13 +178,12 @@ img {
 }
 
 .menu-mobile {
-    background-color: #F6F1EC;
+    background-color: #A6B7A2;
     height: 100vh;
     position: fixed;
     width: 100%;
     z-index: 999;
     padding-top: 150px;
-    font-family: 'Helvetica', sans-serif;
     text-align: right;
     padding-right: 20px;
 }
@@ -195,13 +196,16 @@ img {
 .menu-mobile a {
     clear: right;
     text-decoration: none;
-    color: #333;
+    color: #241E1E;
     height: 70px;
-    line-height
-: 70px;
+    line-height: 70px;
+    font-family: "metallophile-sp8", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
 }
 .menu-mobile a:hover {
-    color: #527A56;
+    color: #F6F1EC;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
@@ -229,14 +233,14 @@ main {
 footer {
     text-align:center;
     background: #527A56;
-    color: white;
+    color: #F6F1EC;
 }
 footer h2 {
     margin:0;
     padding-top:30px;
 }
 footer a {
-    color: white;
+    color: #F6F1EC;
 }
 .footer-nav{
     justify-content: space-evenly;
@@ -272,8 +276,8 @@ footer a {
         justify-content: space-evenly;
     }
     .menu-desktop a:hover {
-        color: #fff;
-        border-bottom:2px solid white;
+        color: #F6F1EC;
+        border-bottom:2px solid #F6F1EC;
     }
     .logo a:hover {
         border:none;
