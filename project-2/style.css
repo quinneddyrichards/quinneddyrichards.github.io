@@ -15,6 +15,14 @@ h2{
     font-style: normal;
     font-size: 46px;
 }
+
+h3{
+    font-family: "metallophile-sp8", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 34px;
+}
+
 body{
     font-family: 'Spectral', serif;
     font-weight: 400;
@@ -36,13 +44,16 @@ body{
     font-size: 40px;
 }
 
-
-
-
-
-
-
-
+.branding {
+    display: flex;
+    align-items: baseline;
+  }
+  .logo img {
+    border-radius: 50%;
+    margin: 20px;
+    margin-bottom: -20px;
+    flex: 25%;
+  }
 
 
 
@@ -58,17 +69,16 @@ img {
 
 .button {
     display:inline-block;
-    background-color: rgb(149, 0, 255);
-    color: white;
+    background-color: #906D59;
+    color: #F6F1EC;
     text-decoration:none;
     padding: 8px 16px;
-    border-radius: 8px;
-    border:2px solid rgb(149, 0, 255);
+    border-radius: 40px;
 }
 .button:hover {
-    background-color: white;
-    color: rgb(149, 0, 255);
-    border:2px solid rgb(149, 0, 255);
+    background-color: #F6F1EC;
+    color: #906D59;
+    border:2px solid #906D59;
 }
 /* .cta {
     font-size:32px;
@@ -100,15 +110,14 @@ img {
 
 .hamburger {
     width: 40px;
-    height: 4px;
+    height: 3px;
     line-height: 70px;
-    background: #666;
+    background: #241E1E;
     border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
     transition: .5s;
 }
 
@@ -117,10 +126,9 @@ img {
     content: '';
     position: absolute;
     width: 40px;
-    height: 4px;
-    background: #666;
+    height: 3px;
+    background: #241E1E;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
     transition: .5s;
 }
 
@@ -148,14 +156,15 @@ img {
 }
 
 .menu-mobile {
-    background-color: #efefef;
+    background-color: #F6F1EC;
     height: 100vh;
     position: fixed;
     width: 100%;
     z-index: 999;
     padding-top: 150px;
     font-family: 'Helvetica', sans-serif;
-    text-align: center;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .menu-mobile, .menu-mobile a {
@@ -168,10 +177,11 @@ img {
     text-decoration: none;
     color: #333;
     height: 70px;
-    line-height: 70px;
+    line-height
+: 70px;
 }
 .menu-mobile a:hover {
-    color: red;
+    color: #527A56;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
@@ -181,7 +191,7 @@ img {
 
 main {
     margin-top:90px;
-    background-color:rgb(199, 219, 199);
+    background-color: #F6F1EC;
 }
 .flex {
     display:flex;
@@ -197,10 +207,12 @@ main {
 }
 
 
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /* START of desktop menu for 768 media query */
     .menu-desktop {
+        background-color: #A6B7A2;
         width: 100%;
         display: block;
         padding: 0;
@@ -220,11 +232,11 @@ main {
         height: 0;
         line-height: 50px;
         text-decoration: none;
-        color: #333;
+        color: #241E1E;
         justify-content: space-evenly;
     }
     .menu-desktop a:hover {
-        color: red;
+        color: #527A56;
     }
 
     .desktop {
@@ -237,13 +249,23 @@ main {
     header.nav, .menu-mobile {
         display: none;
     }
+
     /* END of desktop menu for 768 media query */
 }
+
+.footer-nav{
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 0;
+    text-align: center;
+}
+
 
 /* If the screen is smaller than 768 */
 @media only screen and (max-width: 768px) {
     .flex {
         flex-direction:column;
+        align-items: flex-start;
     }
     .flex .left {
         padding:0;
