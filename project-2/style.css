@@ -7,6 +7,7 @@ h1{
     font-weight: 500;
     font-style: normal;
     font-size: 90px;
+    margin:0;
 }
 
 h2{
@@ -31,7 +32,19 @@ body{
     font-style: normal;
 
 }
-
+.hero {
+    display:flex;
+    align-items: flex-end;
+    padding-left:60px;
+    height:438px;
+    background-image:url('images/home_wallpaper.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.hero h1 {
+    color: white;
+    margin:0;
+}
 .bold{
     font-family: 'Spectral', serif;
     font-weight: 500;
@@ -98,9 +111,7 @@ img {
 /* START of Mobile Menu */
 .nav, .desktop {
     display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+
     width: 100%;
     z-index: 900;
 }
@@ -199,7 +210,7 @@ img {
 /* END OF Mobile Menu */
 
 main {
-    margin-top:90px;
+    padding-top:90px;
     background-color: #F6F1EC;
 }
 .flex {
