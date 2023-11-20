@@ -109,6 +109,16 @@ img {
 .about-us, .contact-us, .gallery, .apply{
     text-align: center;
 }
+.center{
+    text-align: center;
+}
+.gallery {
+    width:85%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 
 
 /* .cta {
@@ -120,7 +130,6 @@ img {
 /* START of Mobile Menu */
 .nav, .desktop {
     display: block;
-
     width: 100%;
     z-index: 900;
 }
@@ -305,6 +314,7 @@ footer a {
         text-decoration: none;
         color: #241E1E;
         justify-content: space-evenly;
+        font-weight: 300;
     }
     .menu-desktop a:hover {
         color: #F6F1EC;
@@ -328,7 +338,12 @@ footer a {
     /* END of desktop menu for 768 media query */
 }
 
-
+@media only screen and (max-width: 1455px) {
+    footer{
+    flex-direction: column;
+    }
+    
+}
 
 /* If the screen is smaller than 768 */
 @media only screen and (max-width: 768px) {
@@ -343,6 +358,15 @@ footer a {
         flex:1;
         padding:0;
         padding-bottom:30px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    
+    .mobile-logo{
+        width: 94px;
+        padding-top: 8px;
+        padding-left: 18px;
     }
     
 
