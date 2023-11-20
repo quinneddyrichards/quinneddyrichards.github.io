@@ -370,5 +370,16 @@ footer a {
         padding-left: 18px;
     }
     
+    .gallery {
+        width:94%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .tugboat{
+        display: none;
+    }
 
 }
