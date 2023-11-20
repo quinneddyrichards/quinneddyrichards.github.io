@@ -120,11 +120,44 @@ img {
     grid-gap: 20px;
 }
 
-.form{
+form{
     background-color: #A6B7A2;
     padding: 20px;
     margin-right: 40px;
     margin-left: 40px;
+    width:60%;
+    margin:auto;
+    font-family: 'Spectral', serif;
+}
+form .rows {
+    display:flex;
+    justify-content: space-between;
+}
+form .rows label {
+    width:100%;
+}
+
+input {
+    display:block;
+    width:100%;
+    border:none;
+    background-color:#F6F1EC;
+}
+/* .row-2 input, .row-3 input, .row-4 input, .row-5 input, .row-7 input {
+    width:100%;
+} */
+.rows .border-right {
+    border-right:12px solid #A6B7A2;
+}
+.rows.row-button {
+    justify-content: center;
+    padding-top:10px;
+}
+form button.button {
+    background-color: #906D59;
+    font-size: 20px;
+    text-align:center;
+    display:inline-block;
 }
 .name
     {background-color: #F6F1EC;
