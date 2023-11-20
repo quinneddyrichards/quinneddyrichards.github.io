@@ -120,9 +120,20 @@ img {
     grid-gap: 20px;
 }
 
+.form{
+    background-color: #A6B7A2;
+    padding: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.name
+    {background-color: #F6F1EC;
+    width: 80%;
+    display: flex;
+    align-items: center;}
 
 
-/* .cta {
+/* .cta {;
     font-size:32px;
     padding: 20px 28px;
 } */
@@ -133,6 +144,12 @@ img {
     display: block;
     width: 100%;
     z-index: 900;
+
+}
+.nav{
+    position: fixed;
+    left: 0;
+    right:0;
 }
 
 .icon {
@@ -381,5 +398,8 @@ footer a {
     .tugboat{
         display: none;
     }
-
+    
+    main{
+        padding-top: 90px;
+    }
 }
