@@ -122,7 +122,7 @@ img {
 
 form{
     background-color: #A6B7A2;
-    padding: 20px;
+    padding: 10px;
     margin-right: 40px;
     margin-left: 40px;
     width:60%;
@@ -132,6 +132,7 @@ form{
 form .rows {
     display:flex;
     justify-content: space-between;
+    padding: 14px;
 }
 form .rows label {
     width:100%;
@@ -142,6 +143,7 @@ input {
     width:100%;
     border:none;
     background-color:#F6F1EC;
+    height: 75%;
 }
 /* .row-2 input, .row-3 input, .row-4 input, .row-5 input, .row-7 input {
     width:100%;
@@ -155,15 +157,17 @@ input {
 }
 form button.button {
     background-color: #906D59;
-    font-size: 20px;
+    font-size: 40px;
     text-align:center;
     display:inline-block;
+    margin-top: 10px;
 }
 .name
     {background-color: #F6F1EC;
     width: 80%;
     display: flex;
-    align-items: center;}
+    align-items: center;
+}
 
 
 /* .cta {;
@@ -435,4 +439,13 @@ footer a {
     main{
         padding-top: 90px;
     }
+    form {
+        width: 95%;
+    }
+    
+    .map {
+        width: 40%;
+    }
+
 }
+
