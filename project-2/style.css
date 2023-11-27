@@ -169,6 +169,11 @@ form button.button {
     align-items: center;
 }
 
+.map iframe{
+    width: 600px;
+    height: 450px;
+}
+
 
 /* .cta {;
     font-size:32px;
@@ -349,6 +354,10 @@ footer a {
     padding-bottom: 40px;
 }
 
+.trailer iframe {
+    width:560px; 
+    height: 315px;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -443,8 +452,16 @@ footer a {
         width: 95%;
     }
     
-    .map {
-        width: 40%;
+    .map iframe {
+        width: 100%;
+    }
+    .about-page .flex {
+        flex-direction:column-reverse;
+        align-items: flex-start;
+    }
+
+    .trailer iframe {
+        width: 100%;
     }
 
 }
